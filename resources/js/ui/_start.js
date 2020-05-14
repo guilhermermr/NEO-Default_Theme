@@ -35,6 +35,8 @@ require('./modules/mask');
 require('./modules/jquery-ui.min');
 //--------------------[ LazyLoad ]--------------------//
 require('../functions/lazy_load');
+//--------------------[ testFront ]--------------------//
+require('../functions/testFront');
 
 //--------------------[ Start Document ]--------------------//
 $(document).ready(function(){

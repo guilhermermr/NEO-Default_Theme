@@ -1,0 +1,47 @@
+
+@{
+    ViewBag.Title = "Teste Front End";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+
+
+<div class="ui container grid">
+    <div class="row equal width">
+        <div class="column">
+            <form method="post" class="ui form">
+                <h1>Test Front-end</h1>      
+                <div class="field">
+                    <label for="nome">Nome</label>
+                    <input class="form-item" type="text" id="nome" onkeyup="escreverHTML('Nome', 'nome');" required/>
+                </div>
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input class="form-item" type="email" id="email" onkeyup="escreverHTML('E-mail', 'email');" required/>
+                </div>
+                <div class="field">
+                    <label for="tel">Telefone</label>
+                    <input class="form-item" type="tel" id="tel" onkeyup="escreverHTML('Telefone', 'tel');" required/>
+                </div>
+                <div class="field">
+                    <label for="assu">Assunto</label>
+                    <input class="form-item" id="assu" onkeyup="escreverHTML('Assunto', 'assu');" required/>
+                </div>
+                <div class="field">
+                    <label for="msg">Mensagem</label>
+                    <textarea class="form-item" id="msg" onkeyup="escreverHTML('Mensagem', 'msg');" required></textarea>
+                </div>
+                <input class="ui button" type="submit" value="Enviar" name="sended">
+            </form>
+        </div>
+
+        <div class="ui cards column">
+            <div class="card">
+                <div class="content">
+                    <div class="header">Output</div>
+                    <div class="description" id="res">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
